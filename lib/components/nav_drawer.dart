@@ -17,6 +17,13 @@ class NavDrawer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+              Text(
+                'Menu',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                 ),
