@@ -38,7 +38,7 @@ class _ReceitasState extends State<Receitas> {
         onPressed: () {
           GoRouter.of(context).go('/inicio');
         },
-        child: const Icon(Icons.arrow_forward),
+        child: const Icon(Icons.arrow_back),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
     );
