@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ListaDeCompras extends StatefulWidget {
   const ListaDeCompras({Key? key});
@@ -10,7 +11,7 @@ class ListaDeCompras extends StatefulWidget {
 class _ListaDeComprasState extends State<ListaDeCompras> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -33,6 +34,13 @@ class _ListaDeComprasState extends State<ListaDeCompras> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          GoRouter.of(context).go('/inicio');
+        },
+        child: const Icon(Icons.arrow_forward),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
     );
   }
 }

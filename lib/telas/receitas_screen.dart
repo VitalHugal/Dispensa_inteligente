@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class Receitas extends StatefulWidget {
   const Receitas({Key? key});
@@ -10,12 +11,12 @@ class Receitas extends StatefulWidget {
 class _ReceitasState extends State<Receitas> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           Container(
+            Container(
               child: const Center(
                 child: Align(
                   alignment: Alignment.bottomCenter,
@@ -33,6 +34,13 @@ class _ReceitasState extends State<Receitas> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          GoRouter.of(context).go('/inicio');
+        },
+        child: const Icon(Icons.arrow_forward),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
     );
   }
 }
