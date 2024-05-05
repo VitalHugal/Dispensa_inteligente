@@ -114,7 +114,7 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
               const SizedBox(height: SpacingConst.baseSpacing),
-// Terceiro container
+                // Terceiro container
               GestureDetector(
                 onTap: () {
                   // Adicione aqui a ação que deseja realizar ao tocar no container
