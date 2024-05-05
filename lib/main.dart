@@ -13,15 +13,15 @@ import 'telas/main_page.dart';
 final router = GoRouter(
   routes: [
     GoRoute(
-      path: '/lista_de_compras',
+      path: '/Lista_de_compras',
       builder: (context, state) => const ListaDeCompras(),
     ),
     GoRoute(
-      path: '/receitas',
+      path: '/Receitas',
       builder: (context, state) => const Receitas(),
     ),
     GoRoute(
-      path: '/minha_dispensa',
+      path: '/Minha_dispensa',
       builder: (context, state) => const MinhaDispensa(),
     ),
     GoRoute(

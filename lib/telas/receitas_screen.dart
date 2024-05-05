@@ -10,12 +10,26 @@ class Receitas extends StatefulWidget {
 class _ReceitasState extends State<Receitas> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           
+           Container(
+              child: const Center(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    'Receitas',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
