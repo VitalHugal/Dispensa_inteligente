@@ -38,7 +38,7 @@ class _MinhaDispensaState extends State<MinhaDispensa> {
         onPressed: () {
           GoRouter.of(context).go('/inicio');
         },
-        child: const Icon(Icons.arrow_back),
+        child: const Icon(Icons.arrow_back_ios),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
     );
