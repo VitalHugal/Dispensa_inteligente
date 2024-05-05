@@ -10,12 +10,26 @@ class ListaDeCompras extends StatefulWidget {
 class _ListaDeComprasState extends State<ListaDeCompras> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           
+            Container(
+              child: const Center(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    'Lista de Compras',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
