@@ -38,7 +38,16 @@ class NavDrawer extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  // Opção para Minha Dispensa
+                  // Opção para inicio
+                  NavDrawerTile(
+                    icon: FontAwesomeIcons.home,
+                    onTap: () {
+                      // Navegue para a página de inicio
+                      context.go('/inicio');
+                    },
+                    text: 'Inicio',
+                  ),
+                  const SizedBox(height: SpacingConst.baseSpacing * 2), // Espaçamento entre os ícones
                   NavDrawerTile(
                     icon: FontAwesomeIcons.box,
                     onTap: () {
