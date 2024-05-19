@@ -6,9 +6,9 @@ import 'package:flutter_application_1/telas/lista_de_compras_screen.dart';
 import 'package:flutter_application_1/telas/minha_dispensa_screen.dart';
 import 'package:flutter_application_1/telas/receitas_screen.dart';
 import 'telas/register.dart';
-import 'package:go_router/go_router.dart';
 import 'telas/login_screen.dart';
 import 'telas/main_page.dart';
+import 'package:go_router/go_router.dart';
 
 final router = GoRouter(
   routes: [
