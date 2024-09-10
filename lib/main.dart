@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/telas/main_page.dart' as mainPage;
 import 'package:flutter_application_1/telas/forgot_password.dart';
 import 'package:flutter_application_1/telas/home.dart';
+import 'package:flutter_application_1/telas/smart_lar.dart';
 import 'package:flutter_application_1/telas/lista_de_compras_screen.dart';
 import 'package:flutter_application_1/telas/minha_dispensa_screen.dart';
 import 'package:flutter_application_1/telas/receitas_screen.dart';
+import 'package:flutter_application_1/telas/smart_lar.dart';
 import 'telas/register.dart';
 import 'telas/login_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -30,7 +32,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/',
-      builder: (context, state) => const Home(),
+      builder: (context, state) => const WifiForm(),
     ),
     GoRoute(
       path: '/Esqueci-minha-senha',
